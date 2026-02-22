@@ -1,70 +1,104 @@
-<html>
-    <head>
-        <title>ABC Bookstore</title>
-    </head>
-    <body>        
-        <table align="right">
-        <tr >
-            <td><a href="home.html"><h2>Home</h2></a></td>
-            <td><a href="Aboutus.html"><h2>About us</h2></a></td>
-            <td><a href="Books.html"><h2>Books</h2></a></td>
-            <td><a href="Events.html"><h2>Events</h2></a></td>
-            <td><a href="Register.html"><h2>Register</h2></a></td>
-            <td><a href="Contactus.html"><h2>Contact us</h2></a></td>
-        </tr>
-        </table>      
-        <br><br><br>
-        <center><h1>ABC Bookstore</h1></center><br>
-        <h2>Most Viewed Books </h2><br>
-        <table  align="center">  
-        <tr>
-            <td>
-            <a target="_blank" href="Photos/book1.jpg">
-                <img src="Photos/book1.jpg" width="200" height="240">
-            </a>  
-            <p><b>The Sri Lanka Reader:<br> History, Culture, Politics</b></p>
-            <p>by John Clifford Holt</p>
-            <p style="color: red;"><del>LKR 4000.00</del>&emsp;<img src="Photos/dis.jpg" width="40" height="30"></p>
-            <p>LKR 2000.00</p>
-            </td>
-            <td></td>
-         <td >
-            <a target="_blank" href="Photos/book2.jpg">
-                <img src="Photos/book2.jpg" width="200" height="240">
-            </a>
-            <p><b>An Historical Relation of the<br> Island Ceylon</b></p>
-            <p>by Robert Knox</p>
-            <p style="color: red;"><del>LKR 5000.00</del>&emsp;<img src="Photos/dis.jpg" width="40" height="30"></p>
-            <p>LKR 2500.00</p>
-         </td>
-        <td >
-            <a target="_blank" href="Photos/book3.jpg">
-                <img src="Photos/book3.jpg" width="200" height="240">
-            </a>
-            <p><b>The Road to Peradeniya: <br>An Autobiography</b></p>
-            <p>by Ivor Jennings</p>
-            <p style="color: red;"><del>LKR 6000.00</del>&emsp;<img src="Photos/dis.jpg" width="40" height="30"></p>
-            <p>LKR 3000.00</p>
-        </td>
-        <td >
-            <a target="_blank" href="Photos/book4.jpg">
-                <img src="Photos/book4.jpg" width="200" height="240">
-            </a>
-            <p><b>When Memory<br> Dies</b></p>
-            <p>by A. Sivanandan</p>
-            <p style="color: red;"><del>LKR 4500.00</del>&emsp;<img src="Photos/dis.jpg" width="40" height="30"></p>
-            <p>LKR 2250.00</p>
-        </td>
-        <td >
-            <a target="_blank" href="Photos/book5.jpg">
-                <img src="Photos/book5.jpg" width="200" height="240">
-            </a>
-            <p><b>Running in the<br> Family</b></p>
-            <p>by Michael Ondaatje</p>
-            <p style="color: red;"><del>LKR 5000.00</del>&emsp;<img src="Photos/dis.jpg" width="40" height="30"></p>
-            <p>LKR 2500.00</p>
-        </td>
-        </tr>
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bookstore - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="home.html" class="logo">ABC Bookstore</a>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Contactus.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Welcome to ABC Bookstore</h1>
+        
+        <h2 class="section-title">Most Viewed Books</h2>
+        <div class="book-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <a target="_blank" href="Photos/book1.jpg">
+                    <img src="Photos/book1.jpg" alt="The Sri Lanka Reader">
+                </a>
+                <div class="book-info">
+                    <div class="book-title">The Sri Lanka Reader:<br> History, Culture, Politics</div>
+                    <div class="book-author">by John Clifford Holt</div>
+                    <div class="book-price">
+                        <span>LKR 2000.00</span>
+                        <span class="old-price">LKR 4000.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <a target="_blank" href="Photos/book2.jpg">
+                    <img src="Photos/book2.jpg" alt="An Historical Relation of the Island Ceylon">
+                </a>
+                <div class="book-info">
+                    <div class="book-title">An Historical Relation of the<br> Island Ceylon</div>
+                    <div class="book-author">by Robert Knox</div>
+                    <div class="book-price">
+                        <span>LKR 2500.00</span>
+                        <span class="old-price">LKR 5000.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <a target="_blank" href="Photos/book3.jpg">
+                    <img src="Photos/book3.jpg" alt="The Road to Peradeniya">
+                </a>
+                <div class="book-info">
+                    <div class="book-title">The Road to Peradeniya:<br> An Autobiography</div>
+                    <div class="book-author">by Ivor Jennings</div>
+                    <div class="book-price">
+                        <span>LKR 3000.00</span>
+                        <span class="old-price">LKR 6000.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="book-card">
+                <a target="_blank" href="Photos/book4.jpg">
+                    <img src="Photos/book4.jpg" alt="When Memory Dies">
+                </a>
+                <div class="book-info">
+                    <div class="book-title">When Memory<br> Dies</div>
+                    <div class="book-author">by A. Sivanandan</div>
+                    <div class="book-price">
+                        <span>LKR 2250.00</span>
+                        <span class="old-price">LKR 4500.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Book 5 -->
+            <div class="book-card">
+                <a target="_blank" href="Photos/book5.jpg">
+                    <img src="Photos/book5.jpg" alt="Running in the Family">
+                </a>
+                <div class="book-info">
+                    <div class="book-title">Running in the<br> Family</div>
+                    <div class="book-author">by Michael Ondaatje</div>
+                    <div class="book-price">
+                        <span>LKR 2500.00</span>
+                        <span class="old-price">LKR 5000.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>

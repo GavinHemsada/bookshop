@@ -1,29 +1,48 @@
-<html>
-    <head>
-        <title>ABC Bookstore</title>
-    </head>
-    <body>
-        <center><h1>ABC Bookstore LOGIN </h1></center>
-        <table align="center">
-        <form >
-            <tr>
-            <td><label>User Name or Email</label></td>
-            <td><input type="text"><br></td>
-            </tr>
-            <tr>
-            <td><label>Password</label></td>
-            <td><input type="password"><br></td>
-            </tr>
-            <tr>
-                <td><p>Don't have an Account?</p></td>
-                <td><a href="Register.html">Register</a></td> 
-            </tr>
-            <tr>
-                <td></td>
-            <td><button type="submit">LOGIN</button></td>
-            </tr>
-        </form>
-        
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bookstore - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="home.html" class="logo">ABC Bookstore</a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Contactus.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container" style="margin-top: 4rem;">
+            <h1 class="page-title" style="margin-bottom: 1rem;">Login</h1>
+            <p style="text-align: center; margin-bottom: 2rem; color: #64748b;">Welcome back to ABC Bookstore</p>
+            <form>
+                <div class="form-group">
+                    <label>User Name or Email</label>
+                    <input type="text" placeholder="Enter your username or email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <div style="margin-bottom: 1.5rem; text-align: right;">
+                    <span style="color: var(--text-color);">Don't have an Account?</span>
+                    <a href="Register.html" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Register</a>
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+            </form>
+        </div>
+    </main>
+</body>
 </html>

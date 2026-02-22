@@ -1,51 +1,73 @@
-<html>
-    <head>
-        <title>ABC Bookstore</title>
-    </head>
-    <body>
-        <table align="right">
-            <tr >
-                <td><a href="home.html"><h2>Home</h2></a></td>
-                <td><a href="Aboutus.html"><h2>About us</h2></a></td>
-                <td><a href="Books.html"><h2>Books</h2></a></td>
-                <td><a href="Events.html"><h2>Events</h2></a></td>
-                <td><a href="Register.html"><h2>Register</h2></a></td>
-                <td><a href="Contactus.html"><h2>Contact us</h2></a></td>
-            </tr>
-            </table>
-            <br><br><br>
-        <center><h1>ABC Bookstore</h1></center><br><br>
-        <center><h2>Talk to us</h2>
-            <table>
-                <tr>
-                    <td>Your name</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Your Email</td>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <td>Your Message (optional)</td>
-                    <td><textarea name="message" rows="10" cols="30">Enter your message </textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="Submit"></td>
-                </tr>
-                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Bookstore - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="home.html" class="logo">ABC Bookstore</a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Contactus.html" class="active">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        </center>
-          </table><br><br>
-          <table>
-            <tr>
-                <td><img src="Photos/phone.png" width="40" height="40"></td><td><label>Phone:011-3462889&emsp;&emsp;</label></td>
-                <td><img src="Photos/email.png" width="40" height="40"></td><td><label>Email:ABCbookshop@gmail.com&emsp;&emsp;</label></td>
-                <td><img src="Photos/address.png" width="40" height="40"></td><td><label>41, Coldharbour Lane,<br> Colombo 07 , <br>Sri Lanka</label></td>  
-            </tr>
-          </table>
-           
-      
+    <main>
+        <h1 class="page-title">Contact ABC Bookstore</h1>
+        
+        <div class="form-container">
+            <h2 class="section-title" style="text-align: center; border: none;">Talk to us</h2>
+            <form>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Your Email</label>
+                    <input type="email" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Your Message (optional)</label>
+                    <textarea name="message" rows="6" placeholder="Enter your message here..."></textarea>
+                </div>
+                <button type="button" class="btn">Submit Message</button>
+            </form>
+        </div>
 
-    </body>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="Photos/phone.png" alt="Phone">
+                <div>
+                    <strong>Phone</strong><br>
+                    011-3462889
+                </div>
+            </div>
+            <div class="contact-item">
+                <img src="Photos/email.png" alt="Email">
+                <div>
+                    <strong>Email</strong><br>
+                    ABCbookshop@gmail.com
+                </div>
+            </div>
+            <div class="contact-item">
+                <img src="Photos/address.png" alt="Address">
+                <div>
+                    <strong>Address</strong><br>
+                    41, Coldharbour Lane,<br>Colombo 07, Sri Lanka
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
